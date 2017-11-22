@@ -14,4 +14,10 @@ export class AccountsList {
   private _removeAcc(index:number){
     this.delete.emit(index)
   }
+
+  @Output() details = new EventEmitter<Account>()
+
+  private _showDetails(account:Account){
+    this.details.emit(account)
+  }
 }

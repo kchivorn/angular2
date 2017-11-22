@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { AccountComponent } from './account.component'
 import { CreateComponent } from './create.component'
 import { ListComponent } from './list.component'
+import { DetailsComponent } from './details.component'
 
 const accountRoutes: Routes = [
   {
@@ -11,7 +12,8 @@ const accountRoutes: Routes = [
     children: [
       { path: 'lists', component: ListComponent },
       { path: 'new', component: CreateComponent },
-      { path: '', redirectTo: 'lists', pathMatch: "full" }
+      { path: '', redirectTo: 'lists', pathMatch: "full" },
+      { path: ':id', component: DetailsComponent }
     ]
   }
 ]

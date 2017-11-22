@@ -10,7 +10,7 @@ export class ListComponent {
   private _accounts:Array<Account> = [];
   private _accountService:AccountService
 
-  constructor(accountService: AccountService) {
+  constructor(accountService: AccountService, private _router:Router) {
     this._accountService = accountService
     var promise = this._accountService.getAll()
     promise.then(accounts => this._accounts = accounts)
