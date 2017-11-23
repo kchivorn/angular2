@@ -50,6 +50,10 @@
             </tbody>
           </table>
         </div>
+
+        <button [routerLink]="['/transaction', 'new', {account:_account.id}]"
+        class="btn btn-primary">Add transaction</button>
+
       </div>
     </div>
   </div>

@@ -29,7 +29,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-top: 24px;
-  padding: 72px 12px 0 12px;
+  padding: 72px 12px 12px 12px;
 }
 
 .detail-trans:before{

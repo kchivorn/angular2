@@ -11,10 +11,16 @@ import { DetailsComponent } from './account/details.component'
 import { RouterModule, Routes } from '@angular/router'
 import { AppRoutes } from './app.routes'
 import { AccountRoutes } from './account/account.routes'
+import { TransactionComponent } from './transaction/transaction.component'
+import { CreateTransactionComponent } from './transaction/create.component'
+import { TransactionRoutes } from './transaction/transaction.routes'
 
 @NgModule({
-  imports:      [ BrowserModule, AppRoutes, AccountRoutes ],
-  declarations: [ AppComponent,  AccountsList, AccountForm, HomeComponent, AccountComponent, CreateComponent, ListComponent, DetailsComponent ],
+  imports:      [ BrowserModule, AppRoutes, AccountRoutes, TransactionRoutes ],
+  declarations: [ AppComponent,  AccountsList, AccountForm,
+                  HomeComponent, AccountComponent, CreateComponent,
+                  ListComponent, DetailsComponent, TransactionComponent,
+                  CreateTransactionComponent ],
   bootstrap:    [ AppComponent ]
 })
 
